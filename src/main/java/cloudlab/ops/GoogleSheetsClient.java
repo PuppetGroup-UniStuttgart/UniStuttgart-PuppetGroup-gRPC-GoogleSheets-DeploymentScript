@@ -55,7 +55,7 @@ public class GoogleSheetsClient {
 		String serviceCase = null;
 
 		Properties properties = new Properties();
-		InputStream propIn = new FileInputStream(new File("config.properties"));
+		InputStream propIn = new FileInputStream(new File("/config.properties"));
 		properties.load(propIn);
 
 		serviceCase = properties.getProperty("serviceCase");
